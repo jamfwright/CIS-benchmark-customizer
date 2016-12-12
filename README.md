@@ -9,7 +9,7 @@ The logic is not there to re-add tests removed from the exclusion file.  You sho
 ## Usage
 Start by creating your exclusion list and saving it in a text file.  This is done most easily with copy/paste.  Start by opening the bencmark file, such as:  CIS_CentOS_Linux_7_Benchmark_v2.1.0-xccdf.xml
 
-Then, scroll down past the 'Notice' text, until you reach the listing of tests.  It will look like this:
+Then, scroll down past the 'Notice' text, until you reach the listing of tests.  It will look like something like this:
 
 ```
       <select idref="xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled" selected="true"/>
@@ -24,3 +24,12 @@ Then, scroll down past the 'Notice' text, until you reach the listing of tests. 
       <select idref="xccdf_org.cisecurity.benchmarks_rule_1.1.4_Ensure_nosuid_option_set_on_tmp_partition" selected="true"/>
       <select idref="xccdf_org.cisecurity.benchmarks_rule_1.1.5_Ensure_noexec_option_set_on_tmp_partition" selected="true"/>
 ```    
+
+For each test you wish to exclude from the assessment, copy the data from the idref attribute, and paste it into a text file.  Make sure you do not copy the double-quotes.  Your exclusions text file may look something like this:
+
+```
+xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled
+xccdf_org.cisecurity.benchmarks_rule_1.1.1.5_Ensure_mounting_of_hfsplus_filesystems_is_disabled
+xccdf_org.cisecurity.benchmarks_rule_1.1.1.8_Ensure_mounting_of_FAT_filesystems_is_disabled
+xccdf_org.cisecurity.benchmarks_rule_1.1.5_Ensure_noexec_option_set_on_tmp_partition
+```
