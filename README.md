@@ -11,7 +11,7 @@ Start by creating your exclusion list and saving it in a text file.  This is don
 
 Then, scroll down past the 'Notice' text, until you reach the listing of tests.  It will look like this:
 
-'''
+```
       <select idref="xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled" selected="true"/>
       <select idref="xccdf_org.cisecurity.benchmarks_rule_1.1.1.2_Ensure_mounting_of_freevxfs_filesystems_is_disabled" selected="true"/>
       <select idref="xccdf_org.cisecurity.benchmarks_rule_1.1.1.3_Ensure_mounting_of_jffs2_filesystems_is_disabled" selected="true"/>
@@ -23,4 +23,4 @@ Then, scroll down past the 'Notice' text, until you reach the listing of tests. 
       <select idref="xccdf_org.cisecurity.benchmarks_rule_1.1.3_Ensure_nodev_option_set_on_tmp_partition" selected="true"/>
       <select idref="xccdf_org.cisecurity.benchmarks_rule_1.1.4_Ensure_nosuid_option_set_on_tmp_partition" selected="true"/>
       <select idref="xccdf_org.cisecurity.benchmarks_rule_1.1.5_Ensure_noexec_option_set_on_tmp_partition" selected="true"/>
-      '''
+```    
