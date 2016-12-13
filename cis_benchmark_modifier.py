@@ -11,9 +11,6 @@ Purpose:  Modifies CIS Benchmark XCCDF XML files for exclusions that are maintai
 # Imports
 
 from lxml import etree
-import os
-
-os.chdir(r"c:\users\jamfw\tmo")
 
 # Set the variables
 exclusion_count = 0
