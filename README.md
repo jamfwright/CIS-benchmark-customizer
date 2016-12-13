@@ -33,3 +33,25 @@ xccdf_org.cisecurity.benchmarks_rule_1.1.1.5_Ensure_mounting_of_hfsplus_filesyst
 xccdf_org.cisecurity.benchmarks_rule_1.1.1.8_Ensure_mounting_of_FAT_filesystems_is_disabled
 xccdf_org.cisecurity.benchmarks_rule_1.1.5_Ensure_noexec_option_set_on_tmp_partition
 ```
+
+Note where you are storing your files and run the Python script:
+
+```
+python cis_benchmark_modifier.py
+```
+
+The script will ask you to enter the path and file name for the benchmark you wish to modify and the text file containing the exclusions, and will proceed to modify the chosen CIS Benchmark:
+
+```
+Enter Path and XML benchmark file to load (Make sure to use a copy of the original, this one will be over-written!): C:\users\jamfw\tmo\CIS_Microsoft_Windows_10_Enterprise_Release_1511_Benchmark_v1.1.0-xccdf.xml
+Enter the path and filename of the exclusions: C:\users\jamfw\tmo\disables.txt
+
+Number of exclusions: 9
+Number of changes made: 9
+
+The number of exclusions matches the number of changes.  There's a good chance we got it right :)
+```
+
+There is not currently any logic for error handling in terms of valid paths, filenames, or exclusions.  If you mis-type or otherwise don't have a valid entry, the invalid entry could either not match a CIS benchmark test, or it may match too many.  Keep an eye on the cuont that gets returned at the end of the script output.  If the numbers do not match you should expect that things did not go as planned.
+
+
