@@ -67,3 +67,10 @@ The number of exclusions matches the number of changes.  There's a good chance w
 There is not currently any logic for error handling in terms of valid paths, filenames, or exclusions.  If you mis-type or otherwise don't have a valid entry, the invalid entry could either not match a CIS benchmark test, or it may match too many.  Keep an eye on the count that gets returned at the end of the script output.  If the numbers do not match you should expect that things did not go as planned.
 
 
+## Requirements
+
+You will need to install the Python LXML module.  This is an easy install on most Linux systems, either through your package manager (preferred) or using PIP or another Python module installer.
+
+**If you are on Windows** let me save you some trouble figuring out how the heck to you get LXML installed correctly.  There are several options, but the simplist so far is to download the LXML wheel package for your architecture and python version, and install that wheel file.  The alternative is hunting down the appropriate dependencies and manually installing them.  Which you are welcome to do.  If you want to simplify things and use the wheel package, you can find it here:
+
+http://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml
