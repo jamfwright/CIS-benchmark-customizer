@@ -25,7 +25,7 @@ Then, scroll down past the 'Notice' text, until you reach the listing of tests. 
       <select idref="xccdf_org.cisecurity.benchmarks_rule_1.1.5_Ensure_noexec_option_set_on_tmp_partition" selected="true"/>
 ```    
 
-For each test you wish to exclude from the assessment, copy the data from the idref attribute, and paste it into a text file.  Make sure you do not copy the double-quotes.  Your exclusions text file may look something like this:
+For each test you wish to exclude from the assessment, copy the data from the idref attribute, and paste it into a text file.  Make sure you do not copy the double-quotes.  If there are different profiles for a given assesment, you will need to list the correct test entry for each profile you wish to apply the exclusions to.  Your exclusions text file may look something like this:
 
 ```
 xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled
@@ -33,6 +33,18 @@ xccdf_org.cisecurity.benchmarks_rule_1.1.1.5_Ensure_mounting_of_hfsplus_filesyst
 xccdf_org.cisecurity.benchmarks_rule_1.1.1.8_Ensure_mounting_of_FAT_filesystems_is_disabled
 xccdf_org.cisecurity.benchmarks_rule_1.1.5_Ensure_noexec_option_set_on_tmp_partition
 ```
+
+An exclusions file that covers multiple profiles may look like this:
+
+```
+xccdf_org.cisecurity.benchmarks_rule_1.1.1_L1_Ensure_Enforce_password_history_is_set_to_24_or_more_passwords
+xccdf_org.cisecurity.benchmarks_rule_1.1.2_L1_Ensure_Maximum_password_age_is_set_to_60_or_fewer_days_but_not_0
+xccdf_org.cisecurity.benchmarks_rule_18.4.19.1_L2_Ensure_Configuration_of_wireless_settings_using_Windows_Connect_Now_is_set_to_Disabled
+xccdf_org.cisecurity.benchmarks_rule_18.4.19.2_L2_Ensure_Prohibit_access_of_the_Windows_Connect_Now_wizards_is_set_to_Enabled
+xccdf_org.cisecurity.benchmarks_rule_18.8.5.1.1_BL_Ensure_Prevent_installation_of_devices_that_match_any_of_these_device_IDs_is_set_to_Enabled
+
+```
+
 
 Note where you are storing your files and run the Python script:
 
