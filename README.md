@@ -25,7 +25,7 @@ Then, scroll down past the 'Notice' text, until you reach the listing of tests. 
       <select idref="xccdf_org.cisecurity.benchmarks_rule_1.1.5_Ensure_noexec_option_set_on_tmp_partition" selected="true"/>
 ```    
 
-For each test you wish to exclude from the assessment, copy the data from the idref attribute, and paste it into a text file.  Make sure you do not copy the double-quotes.  If there are different profiles for a given assesment, you will need to list the correct test entry for each profile you wish to apply the exclusions to.  Your exclusions text file may look something like this:
+For each test you wish to exclude from the assessment, copy the data from the idref attribute, and paste it into a text file.  Make sure you do not copy the double-quotes.  If there are different profiles for a given assesment (not all assessments have multiple profiles), you will need to list the correct test entry for each profile you wish to apply the exclusions to.  Your exclusions text file may look something like this:
 
 ```
 xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled
