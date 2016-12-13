@@ -52,6 +52,6 @@ Number of changes made: 9
 The number of exclusions matches the number of changes.  There's a good chance we got it right :)
 ```
 
-There is not currently any logic for error handling in terms of valid paths, filenames, or exclusions.  If you mis-type or otherwise don't have a valid entry, the invalid entry could either not match a CIS benchmark test, or it may match too many.  Keep an eye on the cuont that gets returned at the end of the script output.  If the numbers do not match you should expect that things did not go as planned.
+There is not currently any logic for error handling in terms of valid paths, filenames, or exclusions.  If you mis-type or otherwise don't have a valid entry, the invalid entry could either not match a CIS benchmark test, or it may match too many.  Keep an eye on the count that gets returned at the end of the script output.  If the numbers do not match you should expect that things did not go as planned.
 
 
